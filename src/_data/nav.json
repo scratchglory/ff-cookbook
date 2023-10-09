@@ -1,16 +1,24 @@
 {
-    "items": [
-        {
-            "text": "Home",
-            "url": "/"
-        },
-        {
-            "text": "All recipes",
-            "url": "/recipes/"
-        },
-        {
-            "text": "About",
-            "url": "/about/"
-        }
-    ]
+  "items": [
+    {
+      "text": "home",
+      "url": "/"
+    },
+    {
+      "text": "recipes",
+      "url": "/recipes/"
+    },
+    {
+      "text": "collaborations",
+      "url": "/collaborations/"
+    },
+    {
+      "text": "shop",
+      "url": "/shop/"
+    },
+    {
+      "text": "about",
+      "url": "/about/"
+    }
+  ]
 }

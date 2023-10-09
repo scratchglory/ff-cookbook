@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
-title: This cookbook belongs to
+title: Fox and Feast
 authorInTitle: true
 metaTitle: Home
 highlightedTag: Favourite ⭐

@@ -5,7 +5,7 @@ bodyClass: c-home
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <section>
+    {# <section>
         <div class="l-container">
             <h1>{{title}}{% if authorInTitle %} {{ site.author }}{% endif %}</h1>
         </div>
@@ -16,9 +16,33 @@ bodyClass: c-home
             {% set homeSearch = true %}
             {% include "components/search.njk" %}
         </div>
-    </section>
+    </section> #}
 
-    {% if collections[highlightedTag] %}
+    <div class="card-deck">
+        <div class="card" id="card--recipes">
+            <div class="card-body">
+                <h5 class="card-title">Recipes</h5>
+            </div>
+        </div>
+        <div class="card" id="card--collaborations">
+            <div class="card-body">
+                <h5 class="card-title">Collaborations</h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card" id="card--about">
+            <div class="card-body">
+                <h5 class="card-title">About</h5>
+            </div>
+        </div>
+        <div class="card" id="card--shop">
+            <div class="card-body" >
+                <h5 class="card-title">Shop</h5>
+            </div>
+        </div>
+    
+    {# {% if collections[highlightedTag] %}
         <section class="u-bgc-grey-100">
             <div class="l-container">
                 <h2 class="u-mb-large">{{ highlightedTitle }}</h2>
@@ -49,5 +73,5 @@ bodyClass: c-home
                 <a href="/tags/{{ highlightedTag | noEmoji | slug }}" class="c-home__highlighted-tag-link">{{ highlightedLinkText }}</a>
             </div>
         </section>
-    {% endif %}
+    {% endif %} #}
 {% endblock %}
